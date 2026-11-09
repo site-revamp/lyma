@@ -1,0 +1,2552 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>LYMA | The Science of Youth | Advanced Beauty & Longevity</title>
+
+  <meta name="description" content="Discover LYMA's science-led approach to skin longevity. Explore advanced cold laser technology, Power Youth Skincare, supplements and the LYMA Youth System.">
+
+  <meta name="theme-color" content="#000000">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://lyma.life/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="LYMA — The Science of Youth">
+  <meta property="og:description" content="A new perspective on skin, science and longevity. Discover the LYMA ecosystem.">
+  <meta property="og:url" content="https://lyma.life/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --color-primary: #000000;
+      --color-primary-dark: #080808;
+      --color-primary-light: #262626;
+      --color-secondary: #FFFFFF;
+      --color-secondary-dark: #E8E8E8;
+      --color-secondary-light: #FAFAFA;
+      --color-accent: #B8A88A;
+      --color-heading: #080808;
+      --color-text: #292929;
+      --color-text-muted: #777777;
+      --color-background: #FFFFFF;
+      --color-background-alt: #F5F3EF;
+      --color-surface: #FAFAFA;
+      --color-surface-alt: #EFEDE8;
+      --color-border: #E5E5E5;
+      --color-border-strong: #BDBDBD;
+      --color-interactive: #000000;
+      --color-interactive-hover: #333333;
+      --color-focus: #806B47;
+
+      --font-display: "Instrument Serif", Georgia, serif;
+      --font-body: "Manrope", Arial, sans-serif;
+
+      --container: 1300px;
+      --gutter: 24px;
+      --section-space: 110px;
+      --ease: cubic-bezier(.2,.7,.2,1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 100px;
+    }
+
+    body {
+      background: var(--color-background);
+      color: var(--color-text);
+      font-family: var(--font-body);
+      font-size: 17px;
+      line-height: 1.65;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body.menu-open {
+      overflow: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    button, a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    button:focus-visible,
+    a:focus-visible {
+      outline: 2px solid var(--color-focus);
+      outline-offset: 5px;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(var(--container), calc(100% - 48px));
+      margin-inline: auto;
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--color-text-muted);
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      display: block;
+      width: 28px;
+      height: 1px;
+      background: var(--color-accent);
+    }
+
+    .display {
+      font-family: var(--font-display);
+      font-weight: 400;
+      letter-spacing: -.035em;
+      line-height: .98;
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-weight: 400;
+      font-size: clamp(42px, 5.2vw, 72px);
+      letter-spacing: -.035em;
+      line-height: 1.03;
+    }
+
+    .section-copy {
+      max-width: 610px;
+      font-size: 17px;
+      line-height: 1.8;
+      color: var(--color-text-muted);
+    }
+
+    .button {
+      min-height: 54px;
+      padding: 14px 25px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      border: 1px solid transparent;
+      background: var(--color-primary);
+      color: var(--color-secondary);
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: .035em;
+      cursor: pointer;
+      transition: background .3s, color .3s, border-color .3s, transform .3s;
+    }
+
+    .button:hover {
+      background: var(--color-interactive-hover);
+      transform: translateY(-2px);
+    }
+
+    .button-light {
+      background: var(--color-secondary);
+      color: var(--color-primary);
+    }
+
+    .button-light:hover {
+      background: var(--color-accent);
+      color: var(--color-primary);
+    }
+
+    .button-outline {
+      background: transparent;
+      color: var(--color-primary);
+      border-color: var(--color-primary);
+    }
+
+    .button-outline:hover {
+      background: var(--color-primary);
+      color: var(--color-secondary);
+    }
+
+    .button-arrow {
+      font-size: 20px;
+      transition: transform .3s;
+    }
+
+    .button:hover .button-arrow {
+      transform: translateX(4px);
+    }
+
+    /* Announcement */
+
+    .announcement {
+      min-height: 36px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 7px 15px;
+      background: var(--color-primary);
+      color: white;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-align: center;
+    }
+
+    .announcement a {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      margin-left: 8px;
+    }
+
+    /* Navigation */
+
+    .site-header {
+      height: 82px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,.96);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(0,0,0,.08);
+    }
+
+    .nav-inner {
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 27px;
+      align-items: center;
+      list-style: none;
+    }
+
+    .nav-links a,
+    .nav-actions a {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: .02em;
+      transition: opacity .2s;
+    }
+
+    .nav-links a:hover,
+    .nav-actions a:hover {
+      opacity: .55;
+    }
+
+    .logo {
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: .28em;
+      line-height: 1;
+      padding-left: .28em;
+    }
+
+    .nav-actions {
+      justify-self: end;
+      display: flex;
+      align-items: center;
+      gap: 23px;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: transparent;
+      border: 0;
+      width: 44px;
+      height: 44px;
+      cursor: pointer;
+    }
+
+    .menu-toggle span {
+      width: 23px;
+      height: 1px;
+      background: black;
+      display: block;
+      margin: 6px auto;
+      transition: transform .3s;
+    }
+
+    /* Hero */
+
+    .hero {
+      min-height: 710px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      background: #050505;
+      color: white;
+      isolation: isolate;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background:
+        radial-gradient(ellipse at 75% 48%, rgba(184,168,138,.15), transparent 38%),
+        radial-gradient(ellipse at 85% 70%, rgba(255,255,255,.08), transparent 30%),
+        linear-gradient(110deg, #050505 30%, #111 70%, #080808);
+    }
+
+    .hero::after {
+      content: "LYMA";
+      position: absolute;
+      z-index: -1;
+      right: -4%;
+      bottom: -18%;
+      font-size: clamp(240px, 37vw, 560px);
+      font-weight: 800;
+      letter-spacing: -.09em;
+      line-height: .8;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(255,255,255,.055);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 45px;
+      padding-block: 100px;
+    }
+
+    .hero-content {
+      max-width: 680px;
+    }
+
+    .hero .eyebrow {
+      color: var(--color-accent);
+      margin-bottom: 29px;
+    }
+
+    .hero h1 {
+      font-family: var(--font-display);
+      font-weight: 400;
+      font-size: clamp(68px, 8vw, 112px);
+      letter-spacing: -.045em;
+      line-height: .88;
+      margin-bottom: 31px;
+    }
+
+    .hero h1 em {
+      color: var(--color-accent);
+      font-weight: 400;
+    }
+
+    .hero-copy {
+      max-width: 490px;
+      color: #C7C7C7;
+      font-size: 18px;
+      line-height: 1.8;
+      margin-bottom: 36px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    .hero-note {
+      display: flex;
+      gap: 22px;
+      margin-top: 43px;
+      color: #B7B7B7;
+      font-size: 13px;
+      letter-spacing: .04em;
+    }
+
+    .hero-note span {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .hero-note span::before {
+      content: "";
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--color-accent);
+    }
+
+    /* Hero visual: conceptual light laboratory */
+
+    .hero-art {
+      height: 490px;
+      position: relative;
+      display: grid;
+      place-items: center;
+    }
+
+    .light-orbit {
+      position: absolute;
+      width: min(420px, 90%);
+      aspect-ratio: 1;
+      border: 1px solid rgba(184,168,138,.34);
+      border-radius: 50%;
+      animation: orbit 30s linear infinite;
+    }
+
+    .light-orbit::before,
+    .light-orbit::after {
+      content: "";
+      position: absolute;
+      border: 1px solid rgba(255,255,255,.13);
+      border-radius: 50%;
+    }
+
+    .light-orbit::before {
+      inset: 32px;
+    }
+
+    .light-orbit::after {
+      inset: 75px;
+    }
+
+    .light-core {
+      width: 155px;
+      height: 155px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #fff 0%, #d9c8a6 5%, rgba(184,168,138,.45) 25%, rgba(184,168,138,.05) 70%, transparent 72%);
+      box-shadow: 0 0 80px rgba(184,168,138,.23), 0 0 180px rgba(184,168,138,.1);
+      animation: pulse 5s ease-in-out infinite;
+    }
+
+    .light-beam {
+      position: absolute;
+      width: 1px;
+      height: 410px;
+      background: linear-gradient(transparent, rgba(184,168,138,.7), transparent);
+      transform: rotate(48deg);
+      opacity: .6;
+    }
+
+    .light-beam.two {
+      transform: rotate(-48deg);
+      opacity: .3;
+    }
+
+    .orbit-label {
+      position: absolute;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .2em;
+      color: var(--color-accent);
+      text-transform: uppercase;
+    }
+
+    .orbit-label.top {
+      top: 9%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .orbit-label.bottom {
+      bottom: 9%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .orbit-label.left {
+      left: -1%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .orbit-label.right {
+      right: -1%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    @keyframes orbit {
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes pulse {
+      0%,100% { transform: scale(.94); opacity: .8; }
+      50% { transform: scale(1.08); opacity: 1; }
+    }
+
+    /* Intro statement */
+
+    .intro {
+      padding-block: 120px;
+      text-align: center;
+    }
+
+    .intro .eyebrow {
+      justify-content: center;
+      margin-bottom: 28px;
+    }
+
+    .intro h2 {
+      max-width: 980px;
+      margin: 0 auto 25px;
+      font-size: clamp(46px, 6.5vw, 88px);
+      line-height: 1.04;
+    }
+
+    .intro h2 em {
+      color: #9E8D70;
+    }
+
+    .intro p {
+      max-width: 670px;
+      margin: auto;
+      color: var(--color-text-muted);
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    /* Science strip */
+
+    .science-strip {
+      background: var(--color-background-alt);
+      border-block: 1px solid var(--color-border);
+      padding-block: 30px;
+    }
+
+    .science-strip-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .science-strip strong {
+      font-size: 13px;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    .science-strip span {
+      font-size: 15px;
+      color: var(--color-text-muted);
+    }
+
+    /* Product ecosystem */
+
+    .ecosystem {
+      padding-block: var(--section-space);
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 40px;
+      margin-bottom: 60px;
+    }
+
+    .section-heading > div:first-child {
+      max-width: 730px;
+    }
+
+    .section-heading .eyebrow {
+      margin-bottom: 22px;
+    }
+
+    .section-heading .section-copy {
+      margin-top: 20px;
+    }
+
+    .ecosystem-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 20px;
+    }
+
+    .eco-item {
+      position: relative;
+      min-height: 440px;
+      overflow: hidden;
+      background: #F1F0ED;
+      display: flex;
+      align-items: end;
+      isolation: isolate;
+      transition: transform .4s var(--ease);
+    }
+
+    .eco-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .eco-item.dark {
+      background: #101010;
+      color: white;
+    }
+
+    .eco-item:nth-child(2) {
+      background: #E9E6E0;
+    }
+
+    .eco-item:nth-child(3) {
+      background: #F5F3EF;
+    }
+
+    .eco-item:nth-child(4) {
+      background: #151515;
+      color: white;
+    }
+
+    .eco-art {
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+    }
+
+    .eco-art::before {
+      content: "";
+      position: absolute;
+      width: 310px;
+      height: 310px;
+      border: 1px solid rgba(184,168,138,.5);
+      border-radius: 50%;
+      box-shadow: 0 0 0 25px rgba(184,168,138,.035), 0 0 0 65px rgba(184,168,138,.025);
+    }
+
+    .eco-art::after {
+      content: "";
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(184,168,138,.42), transparent 72%);
+      filter: blur(10px);
+    }
+
+    .eco-item:nth-child(2) .eco-art::before {
+      width: 230px;
+      height: 330px;
+      border-radius: 48% 48% 12% 12%;
+      transform: rotate(15deg);
+    }
+
+    .eco-item:nth-child(3) .eco-art::before {
+      width: 210px;
+      height: 300px;
+      border-radius: 35% 35% 12% 12%;
+    }
+
+    .eco-item:nth-child(4) .eco-art::before {
+      width: 350px;
+      height: 350px;
+      border-style: dashed;
+    }
+
+    .eco-art-mark {
+      position: relative;
+      z-index: 2;
+      color: rgba(0,0,0,.65);
+      font-size: 82px;
+      font-family: var(--font-display);
+      letter-spacing: -.05em;
+    }
+
+    .dark .eco-art-mark {
+      color: rgba(255,255,255,.8);
+    }
+
+    .eco-content {
+      width: 100%;
+      padding: 38px;
+      background: linear-gradient(transparent, rgba(0,0,0,.04));
+    }
+
+    .dark .eco-content,
+    .eco-item:nth-child(4) .eco-content {
+      background: linear-gradient(transparent, rgba(0,0,0,.7));
+    }
+
+    .eco-content small {
+      font-size: 12px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+      font-weight: 700;
+    }
+
+    .dark .eco-content small,
+    .eco-item:nth-child(4) .eco-content small {
+      color: var(--color-accent);
+    }
+
+    .eco-content h3 {
+      font-family: var(--font-display);
+      font-size: clamp(37px, 4vw, 53px);
+      font-weight: 400;
+      line-height: 1;
+      margin: 10px 0;
+    }
+
+    .eco-content p {
+      max-width: 420px;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--color-text-muted);
+      margin-bottom: 20px;
+    }
+
+    .dark .eco-content p,
+    .eco-item:nth-child(4) .eco-content p {
+      color: #D2D2D2;
+    }
+
+    .text-link {
+      display: inline-flex;
+      gap: 13px;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .09em;
+      border-bottom: 1px solid currentColor;
+      padding-bottom: 6px;
+    }
+
+    .text-link span {
+      transition: transform .3s;
+    }
+
+    .text-link:hover span {
+      transform: translateX(5px);
+    }
+
+    /* Six custom icons */
+
+    .pillars {
+      padding-block: var(--section-space);
+      background: #080808;
+      color: white;
+      overflow: hidden;
+    }
+
+    .pillars-header {
+      max-width: 780px;
+      margin-bottom: 70px;
+    }
+
+    .pillars .eyebrow {
+      color: var(--color-accent);
+      margin-bottom: 23px;
+    }
+
+    .pillars .section-copy {
+      color: #AFAFAF;
+      margin-top: 22px;
+    }
+
+    .icon-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+      gap: 1px;
+      background: rgba(255,255,255,.16);
+    }
+
+    .icon-item {
+      min-height: 240px;
+      padding: 35px 28px;
+      background: #080808;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      transition: background .35s;
+    }
+
+    .icon-item:hover {
+      background: #171717;
+    }
+
+    .icon-item svg {
+      width: 58px;
+      height: 58px;
+      color: var(--color-accent);
+      overflow: visible;
+    }
+
+    .icon-item h3 {
+      font-size: 19px;
+      font-weight: 700;
+      margin-top: 25px;
+    }
+
+    .icon-item p {
+      font-size: 15px;
+      color: #AAA;
+      line-height: 1.7;
+      margin-top: 8px;
+    }
+
+    /* Science section */
+
+    .science {
+      background: var(--color-background-alt);
+      padding-block: var(--section-space);
+    }
+
+    .science-layout {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .science-copy .eyebrow {
+      margin-bottom: 24px;
+    }
+
+    .science-copy h2 {
+      font-size: clamp(48px, 6vw, 76px);
+      margin-bottom: 25px;
+    }
+
+    .science-copy p {
+      color: var(--color-text-muted);
+      margin-bottom: 22px;
+      font-size: 17px;
+    }
+
+    .science-visual {
+      min-height: 500px;
+      position: relative;
+      background: #0B0B0B;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      color: white;
+    }
+
+    .science-visual::before {
+      content: "";
+      position: absolute;
+      width: 70%;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      border: 1px solid rgba(184,168,138,.45);
+      box-shadow: 0 0 0 30px rgba(184,168,138,.04),
+                  0 0 0 80px rgba(184,168,138,.03),
+                  inset 0 0 100px rgba(184,168,138,.08);
+    }
+
+    .science-visual::after {
+      content: "";
+      position: absolute;
+      height: 120%;
+      width: 1px;
+      background: linear-gradient(transparent, #B8A88A, transparent);
+      transform: rotate(45deg);
+      box-shadow: 70px 0 rgba(184,168,138,.35),
+                  -70px 0 rgba(184,168,138,.35);
+    }
+
+    .science-center {
+      z-index: 2;
+      text-align: center;
+    }
+
+    .science-center strong {
+      display: block;
+      font-family: var(--font-display);
+      font-size: clamp(65px, 8vw, 105px);
+      font-weight: 400;
+      color: var(--color-accent);
+      line-height: 1;
+    }
+
+    .science-center span {
+      display: block;
+      font-size: 12px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: #CCC;
+      margin-top: 10px;
+    }
+
+    .science-caption {
+      position: absolute;
+      z-index: 3;
+      left: 25px;
+      bottom: 23px;
+      font-size: 12px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: #AAA;
+    }
+
+    /* Technology comparison */
+
+    .technology {
+      padding-block: var(--section-space);
+    }
+
+    .technology-head {
+      text-align: center;
+      max-width: 780px;
+      margin: 0 auto 55px;
+    }
+
+    .technology-head .eyebrow {
+      justify-content: center;
+      margin-bottom: 23px;
+    }
+
+    .technology-head p {
+      color: var(--color-text-muted);
+      margin-top: 22px;
+    }
+
+    .device-comparison {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .device {
+      padding: 55px 45px;
+      min-height: 400px;
+    }
+
+    .device + .device {
+      border-left: 1px solid var(--color-border);
+    }
+
+    .device-number {
+      font-family: var(--font-display);
+      font-size: 50px;
+      color: var(--color-accent);
+    }
+
+    .device h3 {
+      font-family: var(--font-display);
+      font-size: 42px;
+      font-weight: 400;
+      margin: 12px 0;
+    }
+
+    .device p {
+      color: var(--color-text-muted);
+      max-width: 470px;
+      font-size: 16px;
+    }
+
+    .device ul {
+      list-style: none;
+      margin: 24px 0;
+    }
+
+    .device li {
+      border-bottom: 1px solid var(--color-border);
+      padding: 10px 0;
+      font-size: 15px;
+    }
+
+    .device li::before {
+      content: "—";
+      color: var(--color-accent);
+      margin-right: 12px;
+    }
+
+    /* Youth System */
+
+    .youth {
+      background: #0A0A0A;
+      color: white;
+      padding-block: var(--section-space);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .youth::before {
+      content: "YOUTH";
+      position: absolute;
+      right: -4%;
+      top: 12%;
+      font-size: clamp(160px, 28vw, 380px);
+      font-weight: 800;
+      letter-spacing: -.1em;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(255,255,255,.05);
+      pointer-events: none;
+    }
+
+    .youth-inner {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1fr .8fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .youth .eyebrow {
+      color: var(--color-accent);
+      margin-bottom: 22px;
+    }
+
+    .youth h2 {
+      font-size: clamp(52px, 7vw, 90px);
+      margin-bottom: 25px;
+    }
+
+    .youth p {
+      color: #BEBEBE;
+      max-width: 580px;
+      margin-bottom: 25px;
+      font-size: 17px;
+    }
+
+    .youth-visual {
+      min-height: 450px;
+      display: grid;
+      place-items: center;
+      position: relative;
+    }
+
+    .youth-visual .ring {
+      width: 310px;
+      aspect-ratio: 1;
+      border: 1px solid rgba(184,168,138,.6);
+      border-radius: 50%;
+      position: absolute;
+      animation: orbit 35s linear infinite;
+    }
+
+    .youth-visual .ring::before,
+    .youth-visual .ring::after {
+      content: "";
+      position: absolute;
+      inset: 30px;
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: 50%;
+    }
+
+    .youth-visual .ring::after {
+      inset: 70px;
+    }
+
+    .youth-mark {
+      font-family: var(--font-display);
+      font-size: 85px;
+      color: var(--color-accent);
+      position: relative;
+      z-index: 2;
+    }
+
+    .youth-orbit-label {
+      position: absolute;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .15em;
+      color: #BBB;
+    }
+
+    .youth-orbit-label.one { top: 13%; left: 50%; transform: translateX(-50%); }
+    .youth-orbit-label.two { bottom: 13%; left: 50%; transform: translateX(-50%); }
+
+    /* Evidence and science journal */
+
+    .journal {
+      padding-block: var(--section-space);
+    }
+
+    .journal-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 55px;
+      margin-top: 55px;
+    }
+
+    .journal-feature {
+      min-height: 430px;
+      background: #EAE7E1;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .journal-feature .journal-number {
+      font-family: var(--font-display);
+      font-size: 120px;
+      line-height: 1;
+      color: #A18F71;
+    }
+
+    .journal-feature h3 {
+      font-family: var(--font-display);
+      font-size: 43px;
+      line-height: 1.08;
+      font-weight: 400;
+      margin: 20px 0;
+    }
+
+    .journal-feature p {
+      font-size: 16px;
+      color: var(--color-text-muted);
+      margin-bottom: 20px;
+    }
+
+    .journal-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .journal-entry {
+      padding: 26px 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .journal-entry:first-child {
+      border-top: 1px solid var(--color-border);
+    }
+
+    .journal-entry small {
+      font-size: 12px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+      font-weight: 700;
+    }
+
+    .journal-entry h3 {
+      font-family: var(--font-display);
+      font-size: 30px;
+      font-weight: 400;
+      margin: 7px 0;
+    }
+
+    .journal-entry a {
+      font-size: 14px;
+      font-weight: 700;
+      border-bottom: 1px solid var(--color-accent);
+    }
+
+    /* FAQ */
+
+    .faq {
+      background: var(--color-background-alt);
+      padding-block: var(--section-space);
+    }
+
+    .faq-layout {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 80px;
+    }
+
+    .faq-heading .eyebrow {
+      margin-bottom: 22px;
+    }
+
+    .faq-heading p {
+      margin-top: 20px;
+      color: var(--color-text-muted);
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--color-border-strong);
+    }
+
+    .faq-question {
+      width: 100%;
+      background: transparent;
+      border: 0;
+      padding: 23px 0;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      text-align: left;
+      cursor: pointer;
+      color: var(--color-heading);
+      font-weight: 700;
+      font-size: 17px;
+    }
+
+    .faq-symbol {
+      font-size: 23px;
+      font-weight: 400;
+      transition: transform .3s;
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .4s var(--ease);
+    }
+
+    .faq-answer p {
+      padding: 0 30px 23px 0;
+      color: var(--color-text-muted);
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 250px;
+    }
+
+    .faq-item.active .faq-symbol {
+      transform: rotate(45deg);
+    }
+
+    /* Final CTA */
+
+    .final-cta {
+      background: #000;
+      color: white;
+      padding-block: 105px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .final-cta::before {
+      content: "";
+      position: absolute;
+      width: 650px;
+      height: 650px;
+      border: 1px solid rgba(184,168,138,.16);
+      border-radius: 50%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      box-shadow: 0 0 0 55px rgba(184,168,138,.025),
+                  0 0 0 110px rgba(184,168,138,.02);
+    }
+
+    .final-cta .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .final-cta .eyebrow {
+      justify-content: center;
+      color: var(--color-accent);
+      margin-bottom: 24px;
+    }
+
+    .final-cta h2 {
+      font-size: clamp(55px, 8vw, 100px);
+      max-width: 850px;
+      margin: 0 auto 25px;
+    }
+
+    .final-cta p {
+      max-width: 560px;
+      color: #BDBDBD;
+      margin: 0 auto 32px;
+      font-size: 17px;
+    }
+
+    /* Footer */
+
+    .footer {
+      background: #050505;
+      color: white;
+      padding: 65px 0 28px;
+    }
+
+    .footer-main {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1fr;
+      gap: 45px;
+      padding-bottom: 55px;
+    }
+
+    .footer-logo {
+      font-size: 35px;
+      font-weight: 800;
+      letter-spacing: .25em;
+      padding-left: .25em;
+      display: inline-block;
+      margin-bottom: 18px;
+    }
+
+    .footer-brand p {
+      color: #AAA;
+      max-width: 310px;
+      font-size: 15px;
+    }
+
+    .footer-column h3 {
+      font-size: 13px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+      margin-bottom: 19px;
+    }
+
+    .footer-column ul {
+      list-style: none;
+    }
+
+    .footer-column li {
+      margin-bottom: 12px;
+    }
+
+    .footer-column a {
+      color: #CCC;
+      font-size: 15px;
+      transition: color .2s;
+    }
+
+    .footer-column a:hover {
+      color: white;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #292929;
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      color: #888;
+      font-size: 13px;
+    }
+
+    .footer-bottom a {
+      color: #AAA;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    /* Mobile CTA */
+
+    .mobile-cta {
+      display: none;
+    }
+
+    /* Motion */
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity .8s var(--ease), transform .8s var(--ease);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    /* Tablet */
+
+    @media (max-width: 1000px) {
+      :root {
+        --section-space: 85px;
+      }
+
+      .nav-links {
+        gap: 15px;
+      }
+
+      .nav-links a {
+        font-size: 13px;
+      }
+
+      .hero-inner {
+        gap: 15px;
+      }
+
+      .hero-art {
+        height: 400px;
+      }
+
+      .science-layout,
+      .youth-inner {
+        gap: 40px;
+      }
+
+      .footer-main {
+        grid-template-columns: repeat(2,1fr);
+      }
+    }
+
+    /* Mobile */
+
+    @media (max-width: 760px) {
+      :root {
+        --section-space: 65px;
+      }
+
+      body {
+        font-size: 16px;
+        padding-bottom: 80px;
+      }
+
+      .container {
+        width: calc(100% - 32px);
+      }
+
+      .announcement {
+        font-size: 12px;
+      }
+
+      .site-header {
+        height: 70px;
+      }
+
+      .nav-inner {
+        grid-template-columns: 44px 1fr 44px;
+      }
+
+      .logo {
+        justify-self: center;
+        font-size: 28px;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-actions {
+        gap: 0;
+      }
+
+      .nav-actions .account-link,
+      .nav-actions .search-link {
+        display: none;
+      }
+
+      .nav-links {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: white;
+        padding: 45px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 28px;
+        z-index: 999;
+        transform: translateX(-105%);
+        transition: transform .4s var(--ease);
+      }
+
+      .nav-links.active {
+        transform: translateX(0);
+      }
+
+      .nav-links a {
+        font-family: var(--font-display);
+        font-size: 38px;
+        font-weight: 400;
+      }
+
+      .menu-toggle[aria-expanded="true"] span:first-child {
+        transform: translateY(3.5px) rotate(45deg);
+      }
+
+      .menu-toggle[aria-expanded="true"] span:last-child {
+        transform: translateY(-3.5px) rotate(-45deg);
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .hero-inner {
+        grid-template-columns: 1fr;
+        padding-block: 80px 45px;
+        gap: 10px;
+      }
+
+      .hero h1 {
+        font-size: clamp(60px, 15vw, 88px);
+      }
+
+      .hero-copy {
+        font-size: 16px;
+      }
+
+      .hero-art {
+        height: 300px;
+      }
+
+      .light-orbit {
+        width: 270px;
+      }
+
+      .light-core {
+        width: 110px;
+        height: 110px;
+      }
+
+      .light-beam {
+        height: 280px;
+      }
+
+      .hero-note {
+        flex-wrap: wrap;
+        gap: 12px;
+        font-size: 12px;
+      }
+
+      .intro {
+        padding-block: 75px;
+      }
+
+      .intro h2 {
+        font-size: clamp(43px, 12vw, 62px);
+      }
+
+      .intro p {
+        font-size: 16px;
+      }
+
+      .science-strip-inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+      }
+
+      .science-strip strong {
+        grid-column: 1/-1;
+      }
+
+      .section-heading {
+        display: block;
+        margin-bottom: 35px;
+      }
+
+      .section-heading > .button {
+        margin-top: 25px;
+      }
+
+      .ecosystem-grid {
+        grid-template-columns: 1fr;
+        gap: 13px;
+      }
+
+      .eco-item {
+        min-height: 390px;
+      }
+
+      .eco-content {
+        padding: 26px;
+      }
+
+      .icon-grid {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+      }
+
+      .icon-item {
+        min-height: 225px;
+        padding: 24px 17px;
+      }
+
+      .icon-item h3 {
+        font-size: 17px;
+      }
+
+      .science-layout,
+      .youth-inner,
+      .faq-layout {
+        grid-template-columns: 1fr;
+        gap: 38px;
+      }
+
+      .science-visual {
+        min-height: 340px;
+      }
+
+      .device-comparison {
+        grid-template-columns: 1fr;
+      }
+
+      .device {
+        padding: 36px 15px;
+        min-height: auto;
+      }
+
+      .device + .device {
+        border-left: 0;
+        border-top: 1px solid var(--color-border);
+      }
+
+      .youth-inner {
+        gap: 25px;
+      }
+
+      .youth-visual {
+        min-height: 330px;
+      }
+
+      .youth-visual .ring {
+        width: 255px;
+      }
+
+      .journal-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+      }
+
+      .journal-feature {
+        min-height: 360px;
+        padding: 30px;
+      }
+
+      .journal-feature .journal-number {
+        font-size: 90px;
+      }
+
+      .faq-layout {
+        gap: 25px;
+      }
+
+      .final-cta {
+        padding-block: 75px;
+      }
+
+      .footer-main {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px 20px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+      }
+
+      .mobile-cta {
+        position: fixed;
+        z-index: 1100;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 9px;
+        padding: 11px 12px calc(11px + env(safe-area-inset-bottom));
+        background: rgba(255,255,255,.97);
+        border-top: 1px solid var(--color-border);
+        box-shadow: 0 -5px 25px rgba(0,0,0,.08);
+      }
+
+      .mobile-cta .button {
+        min-height: 52px;
+        padding: 10px 8px;
+        font-size: 13px;
+        letter-spacing: .02em;
+      }
+    }
+
+    @media (max-width: 390px) {
+      .hero-actions {
+        flex-direction: column;
+      }
+
+      .hero-actions .button {
+        width: 100%;
+      }
+
+      .icon-item {
+        padding: 19px 13px;
+      }
+
+      .mobile-cta .button {
+        font-size: 12px;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "LYMA",
+    "url": "https://lyma.life/",
+    "description": "Science-led beauty technology, skincare, supplements and longevity products.",
+    "sameAs": [
+      "https://www.instagram.com/lymalife/",
+      "https://www.linkedin.com/company/lymalifeltd/"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <div class="announcement">
+    THE SCIENCE OF YOUTH
+    <a href="https://lyma.life/products">Discover LYMA</a>
+  </div>
+
+  <header class="site-header">
+    <nav class="container nav-inner" aria-label="Main navigation">
+
+      <button class="menu-toggle" aria-label="Open navigation menu"
+              aria-expanded="false" aria-controls="main-menu">
+        <span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="main-menu">
+        <li><a href="#lasers">Lasers</a></li>
+        <li><a href="#skincare">Skincare</a></li>
+        <li><a href="#supplements">Supplements</a></li>
+        <li><a href="#science">Science</a></li>
+      </ul>
+
+      <a class="logo" href="https://lyma.life/" aria-label="LYMA homepage">LYMA</a>
+
+      <div class="nav-actions">
+        <a class="search-link" href="https://lyma.life/products">DISCOVER</a>
+        <a class="account-link" href="https://lyma.life/account">ACCOUNT</a>
+        <a href="https://lyma.life/cart" aria-label="Shopping bag">BAG ↗</a>
+      </div>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+
+    <section class="hero">
+      <div class="container hero-inner">
+
+        <div class="hero-content reveal">
+          <div class="eyebrow">The future of skin longevity</div>
+
+          <h1>
+            The science<br>
+            of <em>youth.</em>
+          </h1>
+
+          <p class="hero-copy">
+            A new perspective on skin, science and longevity.
+            Discover advanced laser technology, considered skincare
+            and science-led wellness, designed to work together.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#ecosystem" class="button button-light">
+              EXPLORE LYMA <span class="button-arrow">→</span>
+            </a>
+
+            <a href="#science" class="button button-outline"
+               style="border-color:#777;color:#fff">
+              DISCOVER THE SCIENCE
+            </a>
+          </div>
+
+          <div class="hero-note">
+            <span>Science-led innovation</span>
+            <span>Advanced technology</span>
+            <span>Integrated wellbeing</span>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="Abstract light laboratory illustration">
+          <div class="light-orbit"></div>
+          <div class="light-beam"></div>
+          <div class="light-beam two"></div>
+          <div class="light-core"></div>
+          <span class="orbit-label top">Precision</span>
+          <span class="orbit-label bottom">Innovation</span>
+          <span class="orbit-label left">Science</span>
+          <span class="orbit-label right">Longevity</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BRAND INTRODUCTION -->
+
+    <section class="intro container reveal">
+      <div class="eyebrow">A different approach</div>
+
+      <h2 class="display">
+        Beyond the surface.<br>
+        Towards a more <em>considered</em> future.
+      </h2>
+
+      <p>
+        LYMA brings together advanced cold laser technology,
+        targeted skincare and nutritional innovation in an
+        integrated approach to the science of youth.
+      </p>
+    </section>
+
+    <section class="science-strip">
+      <div class="container science-strip-inner">
+        <strong>One philosophy. Multiple disciplines.</strong>
+        <span>Technology</span>
+        <span>Skincare</span>
+        <span>Nutrition</span>
+        <span>Longevity science</span>
+      </div>
+    </section>
+
+    <!-- PRODUCT ECOSYSTEM -->
+
+    <section class="ecosystem container" id="ecosystem">
+
+      <div class="section-heading reveal">
+        <div>
+          <div class="eyebrow">Discover the LYMA ecosystem</div>
+          <h2 class="section-title">
+            Science, expressed<br>in four disciplines.
+          </h2>
+          <p class="section-copy">
+            Explore each part of the LYMA universe.
+            From advanced at-home laser technology to daily
+            skincare and nutritional innovation.
+          </p>
+        </div>
+
+        <a href="https://lyma.life/products" class="button button-outline">
+          EXPLORE ALL PRODUCTS →
+        </a>
+      </div>
+
+      <div class="ecosystem-grid">
+
+        <article class="eco-item dark reveal" id="lasers">
+          <div class="eco-art">
+            <span class="eco-art-mark">01</span>
+          </div>
+          <div class="eco-content">
+            <small>01 / Advanced technology</small>
+            <h3>LYMA Lasers</h3>
+            <p>
+              Explore at-home cold laser technology,
+              including the LYMA Laser and Laser PRO.
+            </p>
+            <a href="https://lyma.life/products/lyma-laser-bf"
+               class="text-link">DISCOVER LASERS <span>→</span></a>
+          </div>
+        </article>
+
+        <article class="eco-item reveal" id="skincare">
+          <div class="eco-art">
+            <span class="eco-art-mark">02</span>
+          </div>
+          <div class="eco-content">
+            <small>02 / Advanced formulations</small>
+            <h3>Power Youth Skincare</h3>
+            <p>
+              Discover the serum, cream, mist and mask
+              within LYMA's skincare collection.
+            </p>
+            <a href="https://lyma.life/products"
+               class="text-link">EXPLORE SKINCARE <span>→</span></a>
+          </div>
+        </article>
+
+        <article class="eco-item reveal" id="supplements">
+          <div class="eco-art">
+            <span class="eco-art-mark">03</span>
+          </div>
+          <div class="eco-content">
+            <small>03 / Nutritional innovation</small>
+            <h3>LYMA Supplement</h3>
+            <p>
+              Explore LYMA's science-led nutritional
+              supplement and daily wellness approach.
+            </p>
+            <a href="https://lyma.life/products/lyma-supplement-free-eye-mask"
+               class="text-link">DISCOVER SUPPLEMENT <span>→</span></a>
+          </div>
+        </article>
+
+        <article class="eco-item reveal">
+          <div class="eco-art">
+            <span class="eco-art-mark">04</span>
+          </div>
+          <div class="eco-content">
+            <small>04 / Gut health</small>
+            <h3>LYMA ID²</h3>
+            <p>
+              Discover the LYMA ID² Gut Bio-Complex
+              and its microbiome-focused approach.
+            </p>
+            <a href="https://lyma.life/products/lyma-id-pouch"
+               class="text-link">EXPLORE ID² <span>→</span></a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SIX CUSTOM ICONS: EXACTLY TWO ROWS OF THREE -->
+
+    <section class="pillars">
+      <div class="container">
+
+        <div class="pillars-header reveal">
+          <div class="eyebrow">The LYMA philosophy</div>
+          <h2 class="section-title">
+            An ecosystem built<br>around possibility.
+          </h2>
+          <p class="section-copy">
+            Every discipline represents a different part of
+            LYMA's approach to science-led skin and wellbeing.
+          </p>
+        </div>
+
+        <div class="icon-grid">
+
+          <!-- ICON 1: Laser technology -->
+          <article class="icon-item reveal">
+            <svg viewBox="0 0 64 64" fill="none"
+                 stroke="currentColor" stroke-width="1.5"
+                 stroke-linecap="round" stroke-linejoin="round"
+                 aria-hidden="true">
+              <circle cx="32" cy="32" r="22"/>
+              <circle cx="32" cy="32" r="8"/>
+              <path d="M32 2v12M32 50v12M2 32h12M50 32h12"/>
+              <path d="m16 16 8 8m16 16 8 8M48 16l-8 8M24 40l-8 8"/>
+              <circle cx="32" cy="32" r="2" fill="currentColor"/>
+            </svg>
+            <div>
+              <h3>Laser technology</h3>
+              <p>Advanced at-home cold laser innovation.</p>
+            </div>
+          </article>
+
+          <!-- ICON 2: Skincare -->
+          <article class="icon-item reveal">
+            <svg viewBox="0 0 64 64" fill="none"
+                 stroke="currentColor" stroke-width="1.5"
+                 stroke-linecap="round" stroke-linejoin="round"
+                 aria-hidden="true">
+              <path d="M32 8C25 19 15 28 15 39a17 17 0 0 0 34 0C49 28 39 19 32 8Z"/>
+              <path d="M24 40c0 5 3 8 8 9"/>
+              <path d="M44 10v9M39.5 14.5h9"/>
+            </svg>
+            <div>
+              <h3>Advanced skincare</h3>
+              <p>Considered formulations for daily skin care.</p>
+            </div>
+          </article>
+
+          <!-- ICON 3: Nutrition -->
+          <article class="icon-item reveal">
+            <svg viewBox="0 0 64 64" fill="none"
+                 stroke="currentColor" stroke-width="1.5"
+                 stroke-linecap="round" stroke-linejoin="round"
+                 aria-hidden="true">
+              <path d="M20 13h24v38H20z" rx="5"/>
+              <path d="M20 32h24"/>
+              <path d="M32 13v38"/>
+              <path d="M26 23c3-4 9-4 12 0M26 41c3 4 9 4 12 0"/>
+            </svg>
+            <div>
+              <h3>Nutrition</h3>
+              <p>Science-led nutritional supplementation.</p>
+            </div>
+          </article>
+
+          <!-- ICON 4: Gut health -->
+          <article class="icon-item reveal">
+            <svg viewBox="0 0 64 64" fill="none"
+                 stroke="currentColor" stroke-width="1.5"
+                 stroke-linecap="round" stroke-linejoin="round"
+                 aria-hidden="true">
+              <path d="M29 9c-7 0-10 6-9 13-8 1-11 8-8 14 2 5 7 6 10 5-2 7 3 13 10 13 7 0 12-6 12-13 7-2 9-10 5-15-3-4-7-5-12-4-1-8-3-13-8-13Z"/>
+              <path d="M29 9c2 9-2 13-7 16M34 24c-5 3-5 9 0 12s7 7 4 14"/>
+              <path d="M20 37c6-3 11-2 14 2"/>
+            </svg>
+            <div>
+              <h3>Gut health</h3>
+              <p>Microbiome-focused product innovation.</p>
+            </div>
+          </article>
+
+          <!-- ICON 5: Scientific research -->
+          <article class="icon-item reveal">
+            <svg viewBox="0 0 64 64" fill="none"
+                 stroke="currentColor" stroke-width="1.5"
+                 stroke-linecap="round" stroke-linejoin="round"
+                 aria-hidden="true">
+              <circle cx="32" cy="32" r="23"/>
+              <path d="M32 18v14l10 7"/>
+              <path d="M18 11 13 6M46 11l5-5"/>
+              <circle cx="32" cy="32" r="2" fill="currentColor"/>
+            </svg>
+            <div>
+              <h3>Scientific research</h3>
+              <p>Research and evidence inform the LYMA philosophy.</p>
+            </div>
+          </article>
+
+          <!-- ICON 6: Integrated routine -->
+          <article class="icon-item reveal">
+            <svg viewBox="0 0 64 64" fill="none"
+                 stroke="currentColor" stroke-width="1.5"
+                 stroke-linecap="round" stroke-linejoin="round"
+                 aria-hidden="true">
+              <circle cx="32" cy="32" r="23"/>
+              <path d="M32 9v8M55 32h-8M32 55v-8M9 32h8"/>
+              <path d="m22 32 7 7 14-15"/>
+            </svg>
+            <div>
+              <h3>Integrated routines</h3>
+              <p>Different disciplines brought into one system.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SCIENCE -->
+
+    <section class="science" id="science">
+      <div class="container science-layout">
+
+        <div class="science-copy reveal">
+          <div class="eyebrow">The science of youth</div>
+
+          <h2 class="section-title">
+            Innovation<br>with a purpose.
+          </h2>
+
+          <p>
+            LYMA's approach brings together developments
+            in laser technology, skincare formulation
+            and longevity science.
+          </p>
+
+          <p>
+            Explore the research behind LYMA's products,
+            the technology behind its lasers and the
+            scientific thinking behind its integrated system.
+          </p>
+
+          <a href="https://lyma.life/pages/the-science-of-youth"
+             class="button">
+            EXPLORE THE SCIENCE <span class="button-arrow">→</span>
+          </a>
+        </div>
+
+        <div class="science-visual reveal"
+             role="img"
+             aria-label="Abstract scientific light diffusion illustration">
+          <div class="science-center">
+            <strong>LYMA</strong>
+            <span>Science of Youth</span>
+          </div>
+          <span class="science-caption">
+            Research · Technology · Innovation
+          </span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LASER COMPARISON -->
+
+    <section class="technology container">
+
+      <div class="technology-head reveal">
+        <div class="eyebrow">Advanced laser technology</div>
+
+        <h2 class="section-title">
+          Two devices.<br>One philosophy.
+        </h2>
+
+        <p>
+          Explore the LYMA Laser collection and discover
+          which device is most suitable for your needs.
+        </p>
+      </div>
+
+      <div class="device-comparison">
+
+        <article class="device reveal">
+          <span class="device-number">01</span>
+          <h3>LYMA Laser</h3>
+
+          <p>
+            LYMA's at-home cold laser device,
+            designed for face, neck and targeted areas.
+          </p>
+
+          <ul>
+            <li>500mW cold laser technology</li>
+            <li>Patented 8cm² treatment lens</li>
+            <li>Designed for at-home use</li>
+            <li>Explore the manufacturer's treatment guidance</li>
+          </ul>
+
+          <a href="https://lyma.life/products/lyma-laser-bf"
+             class="button button-outline">
+            EXPLORE LYMA LASER →
+          </a>
+        </article>
+
+        <article class="device reveal">
+          <span class="device-number">02</span>
+          <h3>LYMA Laser PRO</h3>
+
+          <p>
+            The expanded LYMA laser device, designed
+            for larger treatment areas.
+          </p>
+
+          <ul>
+            <li>1450mW cold laser technology</li>
+            <li>Patented 30cm² treatment lens</li>
+            <li>Designed for face, neck and body</li>
+            <li>Explore the manufacturer's treatment guidance</li>
+          </ul>
+
+          <a href="https://lyma.life/products/lyma-laser-pro-bf"
+             class="button">
+            EXPLORE LASER PRO →
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- YOUTH SYSTEM -->
+
+    <section class="youth">
+      <div class="container youth-inner">
+
+        <div class="reveal">
+          <div class="eyebrow">The integrated approach</div>
+
+          <h2 class="section-title">
+            Meet the<br>Youth System.
+          </h2>
+
+          <p>
+            More than an individual product, the LYMA Youth
+            System brings together laser technology,
+            skincare and supplementation into a
+            considered daily protocol.
+          </p>
+
+          <p>
+            Discover the individual elements and how they
+            are designed to work together.
+          </p>
+
+          <a href="https://lyma.life/products/lyma-youth-system"
+             class="button button-light">
+            DISCOVER THE YOUTH SYSTEM →
+          </a>
+        </div>
+
+        <div class="youth-visual reveal"
+             role="img"
+             aria-label="Abstract integrated science and longevity illustration">
+          <div class="ring"></div>
+          <span class="youth-mark">LYMA</span>
+          <span class="youth-orbit-label one">Technology</span>
+          <span class="youth-orbit-label two">Longevity</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SCIENCE JOURNAL -->
+
+    <section class="journal container">
+
+      <div class="section-heading reveal">
+        <div>
+          <div class="eyebrow">Knowledge and discovery</div>
+          <h2 class="section-title">
+            The thinking<br>behind the science.
+          </h2>
+          <p class="section-copy">
+            Explore LYMA's research, educational resources
+            and scientific perspectives.
+          </p>
+        </div>
+        <a href="https://lyma.life/pages/the-science-of-youth"
+           class="button button-outline">
+          EXPLORE SCIENCE →
+        </a>
+      </div>
+
+      <div class="journal-grid">
+
+        <article class="journal-feature reveal">
+          <div class="journal-number">01</div>
+          <div>
+            <div class="eyebrow">Research and evidence</div>
+            <h3>The power of scientific proof.</h3>
+            <p>
+              Discover LYMA's published research and
+              the science behind its approach to
+              skin and longevity.
+            </p>
+            <a href="https://us.lyma.life/pages/about"
+               class="text-link">
+              DISCOVER THE RESEARCH <span>→</span>
+            </a>
+          </div>
+        </article>
+
+        <div class="journal-list">
+
+          <article class="journal-entry reveal">
+            <small>01 / Technology</small>
+            <h3>Understanding cold laser technology.</h3>
+            <a href="https://lyma.life/products/lyma-laser-bf">
+              EXPLORE THE LASER →
+            </a>
+          </article>
+
+          <article class="journal-entry reveal">
+            <small>02 / Science</small>
+            <h3>The science of youth.</h3>
+            <a href="https://lyma.life/pages/the-science-of-youth">
+              DISCOVER MORE →
+            </a>
+          </article>
+
+          <article class="journal-entry reveal">
+            <small>03 / Education</small>
+            <h3>Explore LYMA's knowledge journal.</h3>
+            <a href="https://lyma.life/pages/the-science-of-youth">
+              EXPLORE SCIENCE →
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+
+    <section class="faq">
+      <div class="container faq-layout">
+
+        <div class="faq-heading reveal">
+          <div class="eyebrow">Need to know more?</div>
+          <h2 class="section-title">
+            Questions<br>worth asking.
+          </h2>
+          <p>
+            Find out more about the LYMA product ecosystem,
+            technology and customer support.
+          </p>
+
+          <a href="https://lyma.life/pages/frequently-asked-questions"
+             class="text-link" style="margin-top:25px">
+            VISIT THE HELP CENTRE →
+          </a>
+        </div>
+
+        <div class="faq-list reveal">
+
+          <div class="faq-item">
+            <button class="faq-question"
+                    aria-expanded="false">
+              What is the LYMA Laser?
+              <span class="faq-symbol">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                The LYMA Laser is an at-home cold laser
+                device using low-level laser technology.
+                Visit the official product page for
+                detailed specifications and usage guidance.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question"
+                    aria-expanded="false">
+              What is the difference between the Laser and PRO?
+              <span class="faq-symbol">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                The devices differ in their laser output
+                and treatment lens size. The PRO has a
+                larger treatment lens and higher stated
+                output. Consult LYMA's official comparison
+                and product guidance before choosing.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question"
+                    aria-expanded="false">
+              What is included in the Youth System?
+              <span class="faq-symbol">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                LYMA offers integrated Youth System
+                configurations combining its laser,
+                skincare and nutritional products.
+                The exact contents depend on the selected
+                system edition.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question"
+                    aria-expanded="false">
+              Does LYMA ship internationally?
+              <span class="faq-symbol">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                LYMA states that it ships internationally
+                to more than 100 countries. Availability,
+                delivery estimates and applicable charges
+                should be checked for your destination.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question"
+                    aria-expanded="false">
+              Where can I find product support?
+              <span class="faq-symbol">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Visit the official LYMA Help Centre for
+                product information, delivery, returns,
+                warranty and customer support.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+
+    <section class="final-cta">
+      <div class="container reveal">
+        <div class="eyebrow">Discover a different perspective</div>
+
+        <h2 class="section-title">
+          Your journey<br>into the science of youth.
+        </h2>
+
+        <p>
+          Explore the technology, formulations and
+          science that define the LYMA universe.
+        </p>
+
+        <a href="https://lyma.life/products"
+           class="button button-light">
+          EXPLORE THE LYMA COLLECTION →
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-main">
+
+        <div class="footer-brand">
+          <a href="https://lyma.life/" class="footer-logo">LYMA</a>
+          <p>
+            Science-led innovation across beauty,
+            technology and longevity.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Discover</h3>
+          <ul>
+            <li><a href="#lasers">Lasers</a></li>
+            <li><a href="#skincare">Skincare</a></li>
+            <li><a href="#supplements">Supplements</a></li>
+            <li><a href="#science">Science</a></li>
+            <li><a href="https://lyma.life/products">Shop all</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="https://lyma.life/pages/the-science-of-youth">Science of Youth</a></li>
+            <li><a href="https://lyma.life/products/lyma-youth-system">Youth System</a></li>
+            <li><a href="https://lyma.life/pages/about">Our Story</a></li>
+            <li><a href="https://lyma.life/pages/frequently-asked-questions">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Connect</h3>
+          <ul>
+            <li><a href="https://www.instagram.com/lymalife/" target="_blank" rel="noopener">Instagram ↗</a></li>
+            <li><a href="https://www.facebook.com/thelymalife" target="_blank" rel="noopener">Facebook ↗</a></li>
+            <li><a href="https://www.linkedin.com/company/lymalifeltd/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+            <li><a href="https://lyma.life/pages/frequently-asked-questions">Customer Support</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> LYMA. All rights reserved.</span>
+        <span>
+          <a href="https://lyma.life/">Official LYMA website</a>
+        </span>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- EXACTLY TWO MOBILE CTA BUTTONS -->
+
+  <div class="mobile-cta" aria-label="Quick shopping actions">
+    <a class="button button-outline"
+       href="https://lyma.life/products/lyma-laser-bf">
+      EXPLORE LASER
+    </a>
+
+    <a class="button"
+       href="https://lyma.life/products">
+      SHOP ALL
+    </a>
+  </div>
+
+  <script>
+    // Mobile navigation
+    const menuToggle = document.querySelector(".menu-toggle");
+    const menu = document.querySelector(".nav-links");
+
+    menuToggle.addEventListener("click", () => {
+      const expanded =
+        menuToggle.getAttribute("aria-expanded") === "true";
+
+      menuToggle.setAttribute("aria-expanded", String(!expanded));
+      menuToggle.setAttribute(
+        "aria-label",
+        expanded ? "Open navigation menu" : "Close navigation menu"
+      );
+
+      menu.classList.toggle("active", !expanded);
+      document.body.classList.toggle("menu-open", !expanded);
+    });
+
+    // Close navigation after selecting a section
+    menu.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        menu.classList.remove("active");
+        document.body.classList.remove("menu-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation menu");
+      });
+    });
+
+    // Accessible FAQ accordion
+    document.querySelectorAll(".faq-question").forEach(button => {
+      button.addEventListener("click", () => {
+        const item = button.closest(".faq-item");
+        const isActive = item.classList.contains("active");
+
+        document.querySelectorAll(".faq-item").forEach(other => {
+          other.classList.remove("active");
+          other.querySelector(".faq-question")
+            .setAttribute("aria-expanded", "false");
+        });
+
+        if (!isActive) {
+          item.classList.add("active");
+          button.setAttribute("aria-expanded", "true");
+        }
+      });
+    });
+
+    // Scroll reveal animation
+    const revealElements = document.querySelectorAll(".reveal");
+
+    if ("IntersectionObserver" in window) {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.12,
+        rootMargin: "0px 0px -35px 0px"
+      });
+
+      revealElements.forEach(element => observer.observe(element));
+    } else {
+      revealElements.forEach(element => element.classList.add("visible"));
+    }
+
+    // Dynamic copyright year
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
